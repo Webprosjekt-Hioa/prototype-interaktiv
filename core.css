@@ -1,0 +1,89 @@
+body { margin: 0px; background-color: snow; font-family: Arial,Helvetica,sans-serif;  }
+
+.drawable { 
+    height: 568px;
+    width: 320px;
+    max-width: 320px;
+}
+
+.three-row { 
+    /*width: 300px;*/
+    text-align: center;
+ }
+
+.three-row-item
+{
+    height: 120px;
+    width: 100px;
+    box-shadow: 0px 0px 5px;
+    min-height: 100px;
+    /*margin: 2px;*/
+    display: inline-table;
+}
+
+.flagg
+{
+    margin-top: 5px;
+    height: 45px;
+    max-width: 95px;
+    border: 1px solid black;
+}
+
+.flagg-text
+{
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.ikon-container
+{
+    height: 75px;
+    width: 75px;
+    background-color: snow;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-flex;
+}
+
+
+.ikon
+{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.list-container
+{
+    max-height: 150px; background-color: #f6efef; display:inline-flex; width: 100%;
+    margin: 2px 0px;
+}
+
+
+#device {
+    height: 568px;
+    width: 320px;
+    padding: 70px 20px;
+    border-radius: 25px;
+    background-color: black;
+    
+}
+
+#back_button
+{
+    margin: 5px; padding: 10px; text-align: left; display: table; background-color: blue;
+}
+
+#screen {
+    background-color: white;
+}
+
+#status-bar {
+    background-color: #00a6e8;
+    margin-bottom: 10px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    display: inline-flex;
+    width: 100%;
+}

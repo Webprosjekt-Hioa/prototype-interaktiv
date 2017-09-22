@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Protoype</title>
+        <link rel="stylesheet" type="text/css" href="core.css">
+        <script>
+            function OnClick_Navigate(v)
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", v, false);
+                xmlhttp.send();
+
+                document.getElementById('screen').innerHTML = xmlhttp.responseText;
+                //return xmlhttp.responseText;
+            }
+            
+            function Load_Proto()
+            {
+                var item = document.getElementById('screen');
+                if (item.childElementCount == 0)
+                {
+                    OnClick_Navigate('./view/language.html');
+                }
+            }
+
+            
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="drawable" id="device">
+                <div id="screen" class="drawable">
+                </div>
+                <div onclick="OnClick_Navigate('./view/language.html')" style="border-radius: 50%; width: 50px; height: 50px; margin-top: 10px; display: inline-flex; background-color: rgb(30,30,30);">
+                    <div style="margin: auto; border-radius: 25%; border: 1px solid gray; border-image: none; width: 25px; height: 25px;"></div>
+                </div>
+            </div>
+        </center>
+        <script>
+            window.onloadeddata = Load_Proto();
+        </script>
+    </body>
+</html>
