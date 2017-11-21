@@ -60,6 +60,21 @@ body { margin: 0px; background-color: snow; font-family: Arial,Helvetica,sans-se
 }
 
 
+.ikon-maaltid
+{
+    height: 100px;
+    width: 100px;
+}
+
+.valg-wrapp
+{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0px 0px 5px;
+    padding: 20px;
+}
+
+
 #device {
     height: 568px;
     width: 320px;
